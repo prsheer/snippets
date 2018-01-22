@@ -1,0 +1,13 @@
+/*
+Standard centering
+  right: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+*/
+/*
+  relative position the main element, margin-top is the half of the element
+  right: 0;
+  position: absolute;
+  top: 50%;
+  margin-top: -11px;
+  */
