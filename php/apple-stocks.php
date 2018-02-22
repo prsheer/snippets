@@ -4,7 +4,7 @@ echo '<h3>
     Write an efficient function that takes $stockPricesYesterday and returns the best profit I could have made from 1 purchase and 1 sale of 1 Apple stock yesterday.
 </h3>';
 
-$stockPricesYesterday = [10, 7, 5, 8, 11, 9, 55, 3];
+$stockPricesYesterday = [10, 7, 5, 8, 11];
 
 function getMaxProfit($stockPricesYesterday) {
 
@@ -23,3 +23,5 @@ function getMaxProfit($stockPricesYesterday) {
 }
 
 echo 'You should buy for ' . getMaxProfit($stockPricesYesterday) . '$.';
+
+#returns 6
