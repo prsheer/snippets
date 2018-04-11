@@ -19,6 +19,10 @@ function getProductsOfAllIntsExceptAtIndex($intArray)
     }
 
     //echo '<pre>'; print_r($productsOfAllIntsExceptAtIndex); echo '</pre>';
+        $productsOfAllIntsExceptAtIndex[$i] = $productSoFar;
+        $productSoFar *= $intArray[$i];
+    }
+
     // for each integer, we find the product of all the integers
     // after it. since each index in products already has the
     // product of all the integers before it, now we're storing
@@ -53,3 +57,6 @@ function getSumForProducts($intArray) {
 */
 
 //echo '<pre>' . print_r(getSumForProducts($intArray)) . '</pre>';
+$intArray = [3, 1, 2, 5, 6, 4];
+
+print_r(getProductsOfAllIntsExceptAtIndex($intArray));
