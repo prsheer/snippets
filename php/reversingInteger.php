@@ -1,6 +1,6 @@
 <?php
 
-$integer = 15;
+$integer = -5;
 
 function reverseInteger($integer) 
 {
@@ -12,6 +12,11 @@ function reverseInteger($integer)
 	{
 		$reversed = $string[$i].$reversed;
 		$i++;
+	}
+
+	if ($integer < 0) 
+	{
+		return (int) $reversed * -1;
 	}
 
 	return (int) $reversed;
