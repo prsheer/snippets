@@ -1,5 +1,5 @@
 <?php
-
+$intArray = [1, 2, 6, 5, 9];
 function getProductsOfAllIntsExceptAtIndex($intArray)
 {
     if (count($intArray) < 2) {
@@ -12,6 +12,13 @@ function getProductsOfAllIntsExceptAtIndex($intArray)
     // before it, storing the total product so far each time
     $productSoFar = 1;
     for ($i = 0; $i < count($intArray); $i++) {
+        // [1, 1, 7, 21]
+        $productsOfAllIntsExceptAtIndex[$i] = $productSoFar;
+
+        $productSoFar *= $intArray[$i];
+    }
+
+    //echo '<pre>'; print_r($productsOfAllIntsExceptAtIndex); echo '</pre>';
         $productsOfAllIntsExceptAtIndex[$i] = $productSoFar;
         $productSoFar *= $intArray[$i];
     }
@@ -22,6 +29,8 @@ function getProductsOfAllIntsExceptAtIndex($intArray)
     // the total product of all other integers
     $productSoFar = 1;
     for ($j = count($intArray) - 1; $j >= 0; $j--) {
+
+        //echo '<pre>'; print_r($productsOfAllIntsExceptAtIndex); echo '</pre>';
         $productsOfAllIntsExceptAtIndex[$j] *= $productSoFar;
         $productSoFar *= $intArray[$j];
     }
@@ -29,6 +38,25 @@ function getProductsOfAllIntsExceptAtIndex($intArray)
     return $productsOfAllIntsExceptAtIndex;
 }
 
+echo '<pre>'; print_r(getProductsOfAllIntsExceptAtIndex($intArray)); echo '</pre>';
+
+/*
+function getSumForProducts($intArray) {
+
+    $sum = 1;
+    $sumArray = [];
+    for($i = 0; $i < count($intArray); $i++) {
+        for($j = 0; $j < count($intArray); $j++) {
+            if ($i == $j)
+            $sumArray[] = $intArray[$i] * $intArray[$j];
+        }
+    }
+
+    return ($sumArray);
+}
+*/
+
+//echo '<pre>' . print_r(getSumForProducts($intArray)) . '</pre>';
 $intArray = [3, 1, 2, 5, 6, 4];
 
 print_r(getProductsOfAllIntsExceptAtIndex($intArray));
