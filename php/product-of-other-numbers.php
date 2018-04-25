@@ -21,7 +21,7 @@ function getProductsOfAllIntsExceptAtIndex($intArray)
     //echo '<pre>'; print_r($productsOfAllIntsExceptAtIndex); echo '</pre>';
         $productsOfAllIntsExceptAtIndex[$i] = $productSoFar;
         $productSoFar *= $intArray[$i];
-    }
+
 
     // for each integer, we find the product of all the integers
     // after it. since each index in products already has the
