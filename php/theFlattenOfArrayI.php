@@ -69,3 +69,5 @@ user.address.billing: (string) Street 1
 user.address.delivery: (string) Street 2
 post: (string) Hello, World!
 */
+
+//Success	#stdin #stdout 0.02s 23812KB
