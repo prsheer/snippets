@@ -1,0 +1,68 @@
+parameter1 value1;
+parameter2 value2;
+parameter3 value3;
+
+block1{
+    parameter1-1 value1-1;
+    parameter1-2 value1-2;
+
+    block1-1{
+        parameter1-1-1 value1-1-1;
+        parameter1-1-2 value1-1-2;
+
+        block1-1-1{
+            parameter1-1-1-1 value1-1-1-1;
+            parameter1-1-1-2 value1-1-1-2;
+        }
+        block1-1-2{
+            parameter1-1-2-1 value1-1-2-1;
+            parameter1-1-2-2 value1-1-2-2;
+        }
+    }
+    block1-2{
+        parameter1-2-1 value1-2-1;
+        parameter1-2-2 value1-2-2;
+
+        block1-2-1{
+            parameter1-2-1-1 value1-2-1-1;
+            parameter1-2-1-2 value1-2-1-2;
+        }
+        block1-2-2{
+            parameter1-2-2-1 value1-2-2-1;
+            parameter1-2-2-2 value1-2-2-2;
+        }
+    }
+}
+
+block2{
+    parameter2-1 value2-1;
+    parameter2-2 value2-2;
+
+    block2-1{
+        parameter2-1-1 value2-1-1;
+        parameter2-1-2 value2-1-2;
+
+        block2-1-1{
+            parameter2-1-1-1 value2-1-1-1;
+            parameter2-1-1-2 value2-1-1-2;
+        }
+        block2-1-2{
+            parameter2-1-2-1 value2-1-2-1;
+            parameter2-1-2-2 value2-1-2-2;
+        }
+    }
+    block2-2{
+    parameter2-2-1 value2-2-1;
+    parameter2-2-2 value2-2-2;
+
+    block2-2-1{
+        parameter2-2-1-1 value2-2-1-1;
+        parameter2-2-1-2 value2-2-1-2;
+    }
+    block2-2-2{
+        parameter2-2-2-1 value2-2-2-1;
+        parameter2-2-2-2 value2-2-2-2;
+        }
+    }
+}
+
