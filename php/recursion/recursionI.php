@@ -51,7 +51,6 @@ function convertJsonToSingleArray($object, &$result, $prefix = '') {
         $prefix = rtrim($prefix, '/');
         $result[] = $prefix . " => " . $object . "\n";
 
-        d($result);
         return;
     }
 
@@ -67,4 +66,4 @@ convertJsonToSingleArray($object, $result);
 function d($v) {
     return var_dump($v);
 }
-//d($result);
+d($result);

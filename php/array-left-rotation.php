@@ -45,3 +45,12 @@ function leftRotation($array, $rotate)
 }
 
 print_r(implode(" ", leftRotation($array, $rotate)));
+/*
+ * (array) [6 elements]
+        0: (integer) 99
+        1: (integer) 22
+        2: (integer) 44
+        3: (integer) 5
+        4: (integer) 3
+        5: (integer) 7
+ */
