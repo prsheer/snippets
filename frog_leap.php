@@ -57,4 +57,10 @@ For example, given X = 5 and array A such that:
   A[7] = 4
 
 the function should return 6, as explained above.
-*/
+*/ 
+$ext = get_loaded_extensions();
+asort($ext);
+foreach ($ext as $ref) {
+    echo $ref . "\n";
+}
+ ?>
