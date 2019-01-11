@@ -7,6 +7,7 @@ function mineSweaper($bombs, $numberOfRows, $numberOfColumns) {
     foreach ($bombs as $bomb) {
 
         $rowIndex = $bomb[0];
+        
         $columnIndex = $bomb[1];
 
         $field[$rowIndex][$columnIndex] = -1;
